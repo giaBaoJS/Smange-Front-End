@@ -72,14 +72,11 @@
 		}
 	}
 	&.--scroll {
-		padding: 0;
+		padding: 1rem 0;
 	}
-}
 
-@include sc-break(600px) {
-	.header {
+	@include sc-break(600px) {
 		.container {
-			padding-top: 2rem;
 			display: block;
 			text-align: center;
 		}
@@ -95,7 +92,7 @@
 					display: none;
 				}
 				a {
-					padding: 1.3rem;
+					padding: 1.6rem;
 					font-size: 1.3rem;
 				}
 			}
