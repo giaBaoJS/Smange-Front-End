@@ -1,0 +1,30 @@
+@font-face {
+	font-family: Rbm;
+	src: url('../fonts/Roboto-Medium.ttf');
+	font-display: fallback;
+}
+@font-face {
+	font-family: Rbr;
+	src: url('../fonts/Roboto-Regular.ttf');
+	font-display: fallback;
+}
+@font-face {
+	font-family: Rbb;
+	src: url('../fonts/Roboto-Bold.ttf');
+	font-display: fallback;
+}
+@font-face {
+	font-family: Msm;
+	src: url('../fonts/Montserrat-Medium.ttf');
+	font-display: fallback;
+}
+@font-face {
+	font-family: Msr;
+	src: url('../fonts/Montserrat-Regular.ttf');
+	font-display: fallback;
+}
+@font-face {
+	font-family: Msb;
+	src: url('../fonts/Montserrat-Bold.ttf');
+	font-display: fallback;
+}
