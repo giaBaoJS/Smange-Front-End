@@ -28,3 +28,18 @@
 	src: url('../fonts/Montserrat-Bold.ttf');
 	font-display: fallback;
 }
+@font-face {
+	font-family: Pdm;
+	src: url('../fonts/PlayfairDisplay-Medium.ttf');
+	font-display: fallback;
+}
+@font-face {
+	font-family: Pdr;
+	src: url('../fonts/PlayfairDisplay-Regular.ttf');
+	font-display: fallback;
+}
+@font-face {
+	font-family: Pdb;
+	src: url('../fonts/PlayfairDisplay-Bold.ttf');
+	font-display: fallback;
+}

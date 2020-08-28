@@ -13,9 +13,14 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 
 		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/fonts.css" />
+		<link rel="stylesheet" href="./css/libs.css" />
 	</head>
 	<body>
 		<div class="wrapper">
@@ -110,7 +115,7 @@
 						<div class="row">
 							<div class="col-md-6 col-sm-12">
 								<div class="accordion__left">
-									<h3 class="main-title">Leading your corporate</h3>
+									<h3 class="main-title --large">Leading your corporate</h3>
 									<p class="accordion__desc">
 										Our firm has a history of 10 years since its inception on
 										1st January 2010 with office in New York and Europe
@@ -159,6 +164,46 @@
 						</div>
 					</div>
 				</section>
+				<section class="portfolio">
+					<div class="container">
+						<h3 class="main-title">
+							Case Studies: <br />Discover our success stories
+						</h3>
+						<!-- Slider main container -->
+						<div class="portfolio__list swiper-container">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<h4 class="main-title">Solutions for Invetors</h4>
+									<p>Corporate & Financial</p>
+									<img
+										src="./imgs/portfolio/portfolio-1.jpg"
+										alt="portfolio-1"
+									/>
+								</div>
+								<div class="swiper-slide">
+									<h4 class="main-title">Benefit Entrepreneur</h4>
+									<p>Corporate & Financial</p>
+									<img
+										src="./imgs/portfolio/portfolio-2.jpg"
+										alt="portfolio-2"
+									/>
+								</div>
+								<div class="swiper-slide">
+									<h4 class="main-title">Best Partnerships</h4>
+									<p>Corporate & Financial</p>
+									<img
+										src="./imgs/portfolio/portfolio-3.jpg"
+										alt="portfolio-3"
+									/>
+								</div>
+							</div>
+							<!-- If we need pagination -->
+						</div>
+						<div class="portfolio__pagination swiper-pagination"></div>
+					</div>
+				</section>
 			</main>
 			<footer class="footer"></footer>
 			<button id="scroll-to-top" class="scroll-btn scroll-top">
@@ -166,6 +211,7 @@
 			</button>
 		</div>
 
+		<script src="./js/libs.js"></script>
 		<script src="./js/main.js"></script>
 	</body>
 </html>

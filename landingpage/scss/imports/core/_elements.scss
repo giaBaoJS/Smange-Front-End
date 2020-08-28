@@ -20,7 +20,11 @@ img {
 }
 
 .main-title {
-	font-family: Rbm;
+	font-family: Pdm;
+	line-height: 1.2;
+	margin-bottom: 5rem;
+	font-size: 7.2rem;
+
 	&.--white {
 		color: $white-cl;
 	}
@@ -68,6 +72,7 @@ img {
 	outline: none;
 	border-radius: 50%;
 	box-shadow: 0 0 5px #acacac;
+	z-index: 800;
 	@include hidden;
 	&.fas {
 		font-size: 1.6rem;

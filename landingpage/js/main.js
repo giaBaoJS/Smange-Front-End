@@ -67,3 +67,24 @@ function runSlideBanner() {
 
 runScroll();
 runSlideBanner();
+
+var mySwiper = new Swiper('.swiper-container', {
+	slidesPerView: 1,
+	spaceBetween: 20,
+
+	// Optional parameters
+	direction: 'horizontal',
+	loop: true,
+
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination',
+	},
+
+	breakpoints: {
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 50,
+		},
+	},
+});
