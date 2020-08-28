@@ -222,6 +222,7 @@ img {
   font-family: Rbm;
   text-align: center;
   padding: 1.5rem 4.5rem;
+  max-width: 18rem;
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
@@ -855,6 +856,7 @@ img {
   max-width: 50%;
   font-size: 4.2rem;
   margin-bottom: 7rem;
+  white-space: nowrap;
 }
 .portfolio__list {
   width: 100%;
@@ -907,6 +909,43 @@ img {
   }
   .portfolio__pagination {
     display: none;
+  }
+}
+
+.cta .container {
+  position: relative;
+  padding: 10rem 0;
+  background-image: url("../../landingpage/imgs/something/bg-cta.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.cta .main-title {
+  max-width: 50%;
+  margin: 0 auto 7rem;
+  color: #fff;
+  line-height: 1.5;
+  font-size: 4.2rem;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .cta {
+    padding: 5rem 0;
+  }
+  .cta .main-title {
+    max-width: 100%;
+    margin-bottom: 5rem;
+    font-size: 3.6rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .cta .main-title {
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
   }
 }
 

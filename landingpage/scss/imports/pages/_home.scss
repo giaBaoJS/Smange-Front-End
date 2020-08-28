@@ -316,6 +316,7 @@
 		max-width: 50%;
 		font-size: 4.2rem;
 		margin-bottom: 7rem;
+		white-space: nowrap;
 	}
 
 	&__list {
@@ -370,6 +371,42 @@
 		}
 		&__pagination {
 			display: none;
+		}
+	}
+}
+
+.cta {
+	.container {
+		position: relative;
+		padding: 10rem 0;
+		background-image: url('../../landingpage/imgs/something/bg-cta.jpg');
+		background-position: center;
+		background-size: cover;
+		@include flex(column, space-between, center);
+	}
+	.main-title {
+		max-width: 50%;
+		margin: 0 auto 7rem;
+
+		color: $white-cl;
+		line-height: 1.5;
+		font-size: 4.2rem;
+		text-align: center;
+	}
+	@include tablet {
+		& {
+			padding: 5rem 0;
+		}
+		.main-title {
+			max-width: 100%;
+			margin-bottom: 5rem;
+			font-size: 3.6rem;
+		}
+	}
+	@include mobile {
+		.main-title {
+			font-size: 3.2rem;
+			margin-bottom: 3rem;
 		}
 	}
 }
