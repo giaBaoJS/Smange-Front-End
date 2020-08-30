@@ -523,6 +523,37 @@ img {
   }
 }
 
+.footer {
+  width: 100%;
+  padding: 10rem 0;
+  background: #022b43;
+}
+.footer .container {
+  color: #fff;
+}
+.footer__title {
+  font-size: 1.8rem;
+  padding-bottom: 3rem;
+  font-weight: 700;
+}
+.footer__list__child {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.footer__list__child li {
+  padding-right: 1rem;
+}
+.footer__list li {
+  padding-bottom: 2rem;
+}
+.footer__list a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
 .banner {
   position: relative;
   height: 100vh;
