@@ -111,14 +111,12 @@
 	$font-size,
 	$color,
 	$font-family,
-	$line-height: normal,
 	$font-weight: normal,
 	$text-transform: none
 ) {
 	font-size: $font-size;
-	font-weight: normal;
+	font-weight: $font-weight;
 	font-family: $font-family;
-	line-height: $line-height;
 	color: $color;
 	text-transform: $text-transform;
 }
@@ -189,6 +187,14 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+//calc to tracking in psd => letter spacing to css
+@mixin tracking($tracking) {
+	letter-spacing: ($tracking / 1000) * 1em;
+}
+//calc to leading in psd => line height to css
+@mixin leading($fsz, $leading) {
+	line-height: ($fsz + ($leading / 2)) / 10 * 1rem;
 }
 /* Custom scrollbar*/
 @mixin custom-scrollbar {

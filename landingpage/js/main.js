@@ -84,7 +84,31 @@ var mySwiper = new Swiper('.swiper-container', {
 	breakpoints: {
 		768: {
 			slidesPerView: 2,
-			spaceBetween: 50,
+			spaceBetween: 100,
 		},
 	},
+});
+
+const gList = document.querySelectorAll('.percent__progress');
+gList.forEach((x) => {
+	var circle = new ProgressBar.Circle(x, {
+		color: '#32e0c4',
+		easing: 'linear',
+		strokeWidth: '3',
+		duration: 2000,
+		text: {
+			value: '0%',
+		},
+		step: function (state, circle) {
+			var value = Math.round(circle.value() * 100);
+			if (value === 0) {
+				circle.setText('');
+			} else {
+				circle.setText(value + '%');
+			}
+		},
+	});
+	const endVl = x.dataset.pc / 100;
+
+	circle.animate(endVl);
 });

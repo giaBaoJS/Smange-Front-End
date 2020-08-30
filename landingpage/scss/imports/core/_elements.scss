@@ -20,11 +20,10 @@ img {
 }
 
 .main-title {
-	font-family: Pdm;
-	line-height: 1.2;
 	margin-bottom: 5rem;
-	font-size: 7.2rem;
-
+	line-height: 1.2;
+	@include text(7.2rem, #000, Pdm);
+	@include tracking(-25);
 	&.--white {
 		color: $white-cl;
 	}

@@ -30,7 +30,7 @@
 	}
 
 	&__logo > a {
-		letter-spacing: 0.2rem;
+		letter-spacing: 0.1rem;
 		@include text(2.5rem, $white-cl, Rbm);
 		& > span {
 			font-weight: bold;
@@ -45,7 +45,7 @@
 			position: relative;
 			a {
 				padding: 1.7rem;
-
+				letter-spacing: 0.025rem;
 				@include text(1.5rem, $white-cl, Rbm);
 
 				&::before {
